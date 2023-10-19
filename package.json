@@ -1,0 +1,31 @@
+{
+  "name": "js-web-exam-prep-wizarding-creatures",
+  "version": "1.0.0",
+  "description": "Init project and structure",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plutosapiens/js-web-exam-prep-wizarding-creatures.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/plutosapiens/js-web-exam-prep-wizarding-creatures/issues"
+  },
+  "homepage": "https://github.com/plutosapiens/js-web-exam-prep-wizarding-creatures#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.6.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
