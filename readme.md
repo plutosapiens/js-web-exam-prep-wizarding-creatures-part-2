@@ -92,9 +92,9 @@
     - Upon success redirect to current creature page -->
 9. Routeguards check
 10. Validations
-    - Login
+    <!-- - Login
     -Register
-    -Creatures
+    -Creatures -->
 <!-- 11. Bonus - Profile 
     -> show my posts
     -> if there are no posts - msg -->

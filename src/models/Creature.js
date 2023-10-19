@@ -4,27 +4,35 @@ const mongoose = require('mongoose');
 const creatureSchema = new mongoose.Schema({
     'name': {
         type: String,
-        required: true
+        required: true,
+        minLength: 2,
     },
     'species': {
         type: String,
-        required: true
+        required: true,
+        minLength: 3,
     },
     'skinColor': {
         type: String,
-        required: true
+        required: true,
+        minLength: 3,
     },
     'eyeColor': {
         type: String,
-        required: true
+        required: true,
+        minLength: 3,
     },
     'image': {
         type: String,
-        required: true
+        required: true,
+        match: [/^https?:\/\/.+/, 'Provide velid creature image link!']
+
     },
     'description': {
         type: String,
-        required: true
+        required: true,
+        minLength: 5,
+        maxLength: 500,
     },
     'votes': [{
         type: mongoose.Types.ObjectId,
