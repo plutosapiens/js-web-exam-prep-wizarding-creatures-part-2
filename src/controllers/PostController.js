@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const creatureService = require('../services/creatureService');
 const { extractErrorMsgs } = require('../utils/errorHandler');
+const { isAuth } = require('../middlewares/authMiddleware');
 
 router.get('/all', async (req, res) => {
     const creatures = await creatureService.getAll().lean();
@@ -8,11 +9,11 @@ router.get('/all', async (req, res) => {
     res.render('post/all-posts', { creatures });
 });
 
-router.get('/create', (req, res) => {
+router.get('/create', isAuth,  (req, res) => {
     res.render('post/create');
 });
 
-router.get('/profile', async (req, res) => {
+router.get('/profile', isAuth, async (req, res) => {
     const { user } = req;
     console.log(user);
 

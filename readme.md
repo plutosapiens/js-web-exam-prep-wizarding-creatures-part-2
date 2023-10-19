@@ -90,9 +90,9 @@
     - Upon success redirect to alll opsts page
 8. Edit creature
     - Upon success redirect to current creature page -->
-9. Routeguards check
+<!-- 9. Routeguards check
 10. Validations
-    <!-- - Login
+    - Login
     -Register
     -Creatures -->
 <!-- 11. Bonus - Profile 
