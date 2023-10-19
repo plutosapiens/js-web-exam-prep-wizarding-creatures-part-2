@@ -17,7 +17,6 @@ router.get('/profile', async (req, res) => {
     console.log(user);
 
     const myCreatures = await creatureService.getMyCreatures(user?._id).lean();
-    console.log(myCreatures)
 
     res.render('post/profile', { myCreatures });
 });
