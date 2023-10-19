@@ -79,11 +79,11 @@
     - If the user is the owner of the post, they should have "Edit" and "Delete" button
     - If the user hasn't logged in -> no buttons
     - If the user is not the owner -> vote button -->
-5. Vote button
-    <!-- - When clicked -> "Voted" -->
-    <!-- - Redirect to the details page for the current creature -->
-    - Show the email of te peolpe voted
-    - If the user has voted -> "Thanks for voting" and add the email to the voted list
+<!-- 5. Vote button
+  When clicked -> "Voted"
+  Redirect to the details page for the current creature 
+    - Show the email of the people voted
+    - If the user has voted -> "Thanks for voting" and add the email to the voted list -->
 <!-- 6. Add creature 
     - Upon success redirect to all posts page -->
 <!-- 7. Delete creature
