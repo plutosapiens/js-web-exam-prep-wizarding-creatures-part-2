@@ -12,4 +12,9 @@ router.get('/profile', (req, res) => {
     res.render('post/profile');
 });
 
+router.post('/create', (req, res) => {
+    console.log(req.body)
+    res.redirect ('/posts/all')
+});
+
 module.exports = router;
