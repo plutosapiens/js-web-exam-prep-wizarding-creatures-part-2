@@ -16,8 +16,17 @@ router.get('/profile', (req, res) => {
 
 router.post('/create', async (req, res) => {
     const { name, species, skinColor, eyeColor, image, description, } = req.body
-    const payload = {  name, species, skinColor, eyeColor, image, description, }
-    // console.log(payload)
+
+    const payload = {  
+        name, 
+        species, 
+        skinColor, 
+        eyeColor, 
+        image, 
+        description, 
+        owner: req.user, 
+    }
+    console.log(payload)
 
     await creatureService.create(payload);
     
