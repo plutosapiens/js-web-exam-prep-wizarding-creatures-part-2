@@ -3,8 +3,7 @@ const creatureService = require('../services/creatureService');
 
 
 router.get('/all', async (req, res) => {
-     const creatures = await creatureService.getAll().lean();
-     console.log({ creatures })
+  const creatures = await creatureService.getAll().lean();
 
     res.render('post/all-posts', { creatures });
 });
@@ -29,11 +28,18 @@ router.post('/create', async (req, res) => {
         description, 
         owner: req.user, 
     }
-    console.log(payload)
 
     await creatureService.create(payload);
     
     res.redirect ('/posts/all')
+});
+
+router.get('/:creatureId/details', async (req, res) => {
+    const { creatureId } = req.params;
+
+    const creature = await creatureService.singleCreature(creatureId).lean();
+    console.log({ creature })
+    res.render('post/details', { creature });
 });
 
 module.exports = router;
