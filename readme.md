@@ -80,8 +80,8 @@
     - If the user hasn't logged in -> no buttons
     - If the user is not the owner -> vote button -->
 5. Vote button
-    - When clicked -> "Voted"
-    - Redirect to the details page for the current creature
+    <!-- - When clicked -> "Voted" -->
+    <!-- - Redirect to the details page for the current creature -->
     - Show the email of te peolpe voted
     - If the user has voted -> "Thanks for voting" and add the email to the voted list
 <!-- 6. Add creature 
@@ -95,6 +95,6 @@
     - Login
     -Register
     -Creatures
-11. Bonus - Profile 
+<!-- 11. Bonus - Profile 
     -> show my posts
-    -> if there are no posts - msg
+    -> if there are no posts - msg -->
