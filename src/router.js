@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const homeController = require('./controllers/homeController');
 const userController = require('./controllers/userController');
-const allPostsConntroller = require('./controllers/PostController');
+const allPostsConntroller = require('./controllers/postController');
 
 router.use(homeController);
 router.use('/users', userController);
